@@ -3,7 +3,7 @@ window.CanvasImage = (function (w) {
         this.container = typeof selector == 'string' ? document.querySelector(selector) : selector;
         this.sourceURL = this.container.getAttribute('src');
         this.loadImage(this.sourceURL, this.initializeCanvas);
-    }
+    };
 
     var p = CanvasImage.prototype;
 
@@ -23,7 +23,7 @@ window.CanvasImage = (function (w) {
                 this.imageObject.src = URL;
             }
         }
-    }
+    };
 
     p.initializeCanvas = function () {
         this.imageObject.onload = null;
@@ -51,7 +51,7 @@ window.CanvasImage = (function (w) {
         this.canvas.style.maxHeight = this.container.style.maxHeight;
 
         this.drawImage();
-    }
+    };
 
     p.drawImage = function () {
         var imageWidth = this.imageObject.width;
@@ -61,7 +61,7 @@ window.CanvasImage = (function (w) {
         this.context.drawImage(this.imageObject, 0, 0, affectedRectangle.width, affectedRectangle.height);
 
         this.cleanMemory();
-    }
+    };
 
     p.getAffectedRectangle = function (imageObject) {
         var rectangle = {};
@@ -70,7 +70,7 @@ window.CanvasImage = (function (w) {
         rectangle.height = this.containerHeight;
 
         return rectangle;
-    }
+    };
 
     p.cleanMemory = function () {
         this.imageObject.src = '';
@@ -90,7 +90,7 @@ window.CanvasImage = (function (w) {
         this.containerWidth = null;
         this.containerHeight = null;
         this.sourceURL = null;
-    }
+    };
 
     CanvasImage.all = function () {
         var images = document.getElementsByTagName('img');
@@ -99,7 +99,7 @@ window.CanvasImage = (function (w) {
             new CanvasImage(images[i]);
             i--;
         }
-    }
+    };
 
     return CanvasImage;
 })(window);

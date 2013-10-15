@@ -1,0 +1,41 @@
+{
+  "name": "CanvasImage",
+  "version": "0.3.0",
+  "description": "Converts image to canvas with same look.",
+  "main": "Gruntfile.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PixelsCommander/CanvasImage.git"
+  },
+  "keywords": [
+    "image",
+    "to",
+    "canvas",
+    "android",
+    "antialias",
+    "issue",
+    "memory",
+    "optimization",
+    "for",
+    "responsive",
+    "images"
+  ],
+  "author": "Denis Radin aka PixelsCommander",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "4848ce345190b7ee7c692920735d4210201a752a",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-qunit": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-concat": "~0.3.0"
+  }
+}
