@@ -12,12 +12,21 @@ Simpliest way to use CanvasImage is by calling <code>new CanvasImage('selector')
 
 There is also approach to convert all images on current page. For this use <code>CanvasImage.all()</code>
 
-Memory consumption optimization use case
----
+###Memory consumption optimization use case###
 
-Responsive images are common citezens of web applications. Very often they are a bit larger than we need for particular screen size. 
+#####Problem#####
 
-For example you have universal web app which works on desktops as well as on iPhones. But for iPhone it is preferred to have smaller images than for desktops in order to decrease memory consumption. Most obvious way to  implement this is to create few sets of images for different screen sizes however this is not easy to do - you will need additional files, styles and bunch of time. Here CanvasImage is a game changer.
+Responsive images are common citezens of web applications and very often they are a bit larger than we need for particular screen size. This creates memory iverusage problem for mobile devices.
+
+For example you have universal web app which works on desktops as well as on iPhones. 
+
+![image](http://pixelscommander.com/polygon/canvasimage/whole-ill.png)
+
+Problem is that iPhone still forced to keep in memory large image however it is clear that for mobile we need smaller images. 
+
+#####Solution####
+
+Most obvious way to fix tis is to create few sets of images for different screen sizes however this is not easy to do - you will need additional files to support, styles to develop and bunch of time to spend. Here CanvasImage is a game changer.
 
 How it works: 
 
@@ -32,17 +41,19 @@ After this we have set of canvases which look absolutely like images we had befo
 ![image](http://pixelscommander.com/polygon/canvasimage/memory-consumption-diagramm.png)
 
 
-Android anti-aliasing issue solution
----
+###Android anti-aliasing issue solution###
+
+#####Problem#####
 
 A lot of Android devices have very annoying browser behaviour - it disables antialiasing on every touch to optimize rendering. This creates some kind of blinking effect when user touches screen.
+
+#####Solution#####
 
 It is possible to avoid such this problem with disabling browser anti-aliasing with CSS in this way there will be nothing to disable. Have sense?
 
 Let`s add next CSS code to stylesheet:
 
 		* {
-    		
     		image-rendering: optimizeSpeed;
     		image-rendering: -moz-crisp-edges;
     		image-rendering: -o-crisp-edges;
