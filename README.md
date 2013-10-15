@@ -41,7 +41,7 @@ After this we have set of canvases which look absolutely like images we had befo
 ![image](http://pixelscommander.com/polygon/canvasimage/memory-consumption-diagramm.png)
 
 
-###Android anti-aliasing issue solution###
+###Android anti-aliasing issue use case###
 
 #####Problem#####
 
