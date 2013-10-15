@@ -47,7 +47,8 @@ Let`s add next CSS code to stylesheet:
     		image-rendering: -moz-crisp-edges;
     		image-rendering: -o-crisp-edges;
     		image-rendering: -webkit-optimize-contrast;
-    		image-rendering: optimize-contrast    			-ms-interpolation-mode: nearest-neighbor;
+    		image-rendering: optimize-contrast
+    		-ms-interpolation-mode: nearest-neighbor;
 		}
 
 Yes, this will work until we do not have responsive images in app. Since we will start to use them - issue will appear again. This happens because of difference between antialiasing mechanisms in CSS engine and Android WebView component. CSS antialiases images before they were scaled and browser antialiasing is being applied after scaling.
