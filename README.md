@@ -17,16 +17,16 @@ Memory consumption optimization use case
 
 Responsive images are common citezens of web applications. Very often they are a bit larger than we need for particular screen size. 
 
-For example you have universal web app which works on desktops as well as on iPhones. But for iPhone it is preferred to have smaller images than for desktops in order to decrease memory consumption. Most obvious way to  implement this is to create few sets of images for different screen sizes however this is not easy to do solution. You will need additional files, styles and bunch of time. Here CanvasImage is a game changer.
+For example you have universal web app which works on desktops as well as on iPhones. But for iPhone it is preferred to have smaller images than for desktops in order to decrease memory consumption. Most obvious way to  implement this is to create few sets of images for different screen sizes however this is not easy to do - you will need additional files, styles and bunch of time. Here CanvasImage is a game changer.
 
 How it works: 
 
 - Library finds all img tags on page
 - Replaces them with canvas tags of same size
-- Draws images content to canvases
-- Removes img tags and cleans memory
+- Draws images content to canvases reducing size to needed one
+- Removes old big images from memory
 
-After this we have set of canvases which look absolutely like images we had before but with one difference - we removed all image data which is not needed for our current window size. This frees some memory for other part of application.
+After this we have set of canvases which look absolutely like images we had before but with one difference - we removed all image data which is not needed for our current window size.
 
 
 ![image](http://pixelscommander.com/polygon/canvasimage/memory-consumption-diagramm.png)
