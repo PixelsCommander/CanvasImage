@@ -16,7 +16,7 @@ There is also approach to convert all images on current page. For this use <code
 
 #####Problem#####
 
-Responsive images are common citezens of web applications and very often they are a bit larger than we need for particular screen size. This creates memory iverusage problem for mobile devices.
+Responsive images are common citezens of web applications and very often they are a bit larger than we need for particular screen size. This creates memory overusage problem for mobile devices.
 
 For example you have universal web app which works on desktops as well as on iPhones. 
 
