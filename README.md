@@ -26,7 +26,7 @@ Problem is that iPhone still forced to keep in memory large image however it is 
 
 #####Solution####
 
-Most obvious way to fix tis is to create few sets of images for different screen sizes however this is not easy to do - you will need additional files to support, styles to develop and bunch of time to spend. Here CanvasImage is a game changer.
+Most obvious way to fix this is to create few sets of images for different screen sizes however this is not easy to do - you will need additional files to support, styles to develop and bunch of time to spend. Here CanvasImage is a game changer.
 
 How it works: 
 
