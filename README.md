@@ -22,7 +22,7 @@ For example you have universal web app which works on desktops as well as on iPh
 
 ![image](http://pixelscommander.com/polygon/canvasimage/whole-ill.png)
 
-Problem is that iPhone still forced to keep in memory large image however it is clear that for mobile we need smaller images. 
+Problem is that iPhone is still forced to keep large desktop image in memory.
 
 #####Solution####
 
