@@ -96,8 +96,10 @@ window.CanvasImage = (function (w) {
         var images = document.getElementsByTagName('img');
 
         for (var i = 0; i < images.length; i++) {
-            new CanvasImage(images[i]);
-            i--;
+            if (images[i].offsetWidth < images[i].naturalWidth && images[i].offsetHeight < images[i].naturalHeight) {
+                new CanvasImage(images[i]);
+                i--;
+            }
         }
     };
 
