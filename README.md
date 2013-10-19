@@ -3,7 +3,7 @@ CanvasImage
 
 Converts image to canvas with same look.
 
-Useful for memory optimization in case of responsive images usage. Also is good for solving PhoneGap Android antialiasing issue.
+Useful for memory optimization in case of responsive images usage. Also is good for solving Android antialiasing issue in PhoneGap or web applications.
 
 Usage
 -----
@@ -16,17 +16,17 @@ There is also approach to convert all images on current page. For this use <code
 
 #####Problem#####
 
-Responsive images are common citezens of web applications and very often they are a bit larger than we need for particular screen size. This creates memory iverusage problem for mobile devices.
+Responsive images are common citezens of web applications and very often they are a bit larger than we need for particular screen size. This creates memory overusage problem for mobile devices.
 
 For example you have universal web app which works on desktops as well as on iPhones. 
 
 ![image](http://pixelscommander.com/polygon/canvasimage/whole-ill.png)
 
-Problem is that iPhone still forced to keep in memory large image however it is clear that for mobile we need smaller images. 
+Problem is that iPhone is still forced to keep large desktop image in memory.
 
 #####Solution####
 
-Most obvious way to fix tis is to create few sets of images for different screen sizes however this is not easy to do - you will need additional files to support, styles to develop and bunch of time to spend. Here CanvasImage is a game changer.
+Most obvious way to fix this is to create few sets of images for different screen sizes however this is not easy to do - you will need additional files to support, styles to develop and bunch of time to spend. Here CanvasImage is a game changer.
 
 How it works: 
 
