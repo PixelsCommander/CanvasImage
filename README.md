@@ -49,7 +49,7 @@ A lot of Android devices have very annoying browser behaviour - it disables anti
 
 #####Solution#####
 
-It is possible to avoid such this problem with disabling browser anti-aliasing with CSS in this way there will be nothing to disable. Have sense?
+It is possible to avoid such a problem with disabling browser anti-aliasing with CSS so there will be nothing to disable then. Have sense?
 
 Let`s add next CSS code to stylesheet:
 
@@ -62,8 +62,6 @@ Let`s add next CSS code to stylesheet:
     		-ms-interpolation-mode: nearest-neighbor;
 		}
 
-Yes, this will work until we do not have responsive images in app. Since we will start to use them - issue will appear again. This happens because of difference between antialiasing mechanisms in CSS engine and Android WebView component. CSS antialiases images before they were scaled and browser antialiasing is being applied after scaling.
+Yes, this will work until we do not have responsive images in app. Since we will start to use them - issue will appear again. This happens because of difference between antialiasing mechanisms of CSS engine and Android WebView component. CSS antialiases images before they were scaled and browser antialiasing is being applied after scaling.
 
-To avoid this effect you have to disable scaling somehow.
-
-Here CanvasImage can be best approach possible beacuse it replaces scaled images with unscaled canvases.
+To avoid this effect you have to have images absolutely unscaled somehow. Here CanvasImage can be best approach possible beacuse it replaces scaled images with unscaled canvases.
